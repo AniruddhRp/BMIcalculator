@@ -1,0 +1,211 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.background {
+    background: linear-gradient(135deg, #4158D0, #C850C0, #FFCC70);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.calculator, .info-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.response-time {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    text-align: center;
+  }
+
+button {
+    background: linear-gradient(to right, #FF512F, #F09819);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.bmi-value {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bmi-category {
+    display: block;
+    padding: 10px 15px;
+    background: rgba(103, 131, 109, 0.6);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.assistant {
+    margin-top: 0;
+    padding: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    margin-bottom: 0;
+}
+
+.bmi-categories div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.info-section ul {
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info-section li {
+    margin-bottom: 10px;
+}
+
+.info-section a {
+    color: #FFCC70;
+    text-decoration: none;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .calculator, .info-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bmi-value {
+        font-size: 28px;
+    }
+
+    .bmi-category {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    input, button {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .info-section ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .bmi-value {
+        font-size: 24px;
+    }
+
+    input, button {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthMetrics BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <header>
+        <div class="logo">HealthMetrics</div>
+      </header>
+      <main>
+        <section class="calculator glass">
+          <h2>BMI Calculator</h2>
+          <input type="number" id="height" placeholder="Height (cm)" />
+          <input type="number" id="weight" placeholder="Weight (kg)" />
+          <button id="calculateBtn">Calculate BMI</button>
+          <div class="result">
+            <h3>Your BMI</h3>
+            <span id="bmiValue" class="bmi-value">No data given</span>
+            <span id="bmiCategory" class="bmi-category">No data given </span>
+          </div>
+        </section>
+        <section class="info-section glass">
+          <h2>Understanding BMI</h2>
+          <p>
+            BMI (Body Mass Index) is a measure that uses your height and weight
+            to work out if your weight is healthy. While it's a useful tool,
+            it's important to remember that BMI is not a perfect measure of body
+            fat content or overall health.
+          </p>
+          <h3>BMI Categories</h3>
+          <div class="bmi-categories">
+            <div>Underweight: BMI below 18.5</div>
+            <div>Normal weight: BMI 18.5 to 24.9</div>
+            <div>Overweight: BMI 25 to 29.9</div>
+            <div>Obesity: BMI 30 or greater</div>
+          </div>
+          <h3>Additional Resources</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.who.int/tools/growth-reference-data-for-5to19-years/indicators/bmi-for-age"
+                target="_blank"
+                >World Health Organization BMI Information</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cdc.gov/healthyweight/assessing/bmi/index.html"
+                target="_blank"
+                >CDC BMI Calculator</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/"
+                target="_blank"
+                >NHS: What is BMI?</a
+              >
+            </li>
+          </ul>
+          <h3>Limitations of BMI</h3>
+          <p>While BMI is widely used, it has some limitations:</p>
+          <ul>
+            <li>It doesn't distinguish between muscle mass and fat mass</li>
+            <li>It doesn't account for body composition or fat distribution</li>
+            <li>
+              It may not be suitable for athletes, elderly people, or children
+            </li>
+          </ul>
+          <p>
+            For a more comprehensive health assessment, consider consulting with
+            a healthcare professional who can take into account other factors
+            such as body composition, waist circumference, and overall
+            lifestyle.
+          </p>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
